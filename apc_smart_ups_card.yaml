@@ -1,0 +1,62 @@
+type: entities
+title: APC Smart-UPS
+show_header_toggle: false
+state_color: true
+entities:
+  - entity: sensor.apc_ups_status
+    name: Status
+    icon: mdi:battery-charging
+  - entity: sensor.apc_ups_comm_status
+    name: SNMP Communication
+    icon: mdi:lan-connect
+  - entity: sensor.apc_ups_battery_soc
+    name: Battery Charge
+    icon: mdi:battery
+  - entity: sensor.apc_ups_runtime_remaining
+    name: Estimated Runtime
+    icon: mdi:timer-sand
+  - type: divider
+  - entity: sensor.apc_ups_output_power
+    name: Output Active Power
+    icon: mdi:flash
+  - entity: sensor.apc_ups_apparent_power
+    name: Apparent Power
+    icon: mdi:lightning-bolt
+  - entity: sensor.apc_ups_load_percentage
+    name: Load
+    icon: mdi:gauge
+  - entity: sensor.apc_ups_output_current
+    name: Output Current
+    icon: mdi:current-ac
+  - entity: sensor.apc_ups_energy_total
+    name: Total Output Energy
+    icon: mdi:counter
+  - type: divider
+  - entity: sensor.apc_ups_input_voltage
+    name: Input Voltage
+    icon: mdi:sine-wave
+  - entity: sensor.apc_ups_output_voltage
+    name: Output Voltage
+    icon: mdi:power-plug
+  - entity: sensor.apc_ups_output_frequency
+    name: Output Frequency
+    icon: mdi:waveform
+  - entity: sensor.apc_ups_battery_voltage
+    name: Battery Voltage (DC)
+    icon: mdi:car-battery
+  - type: divider
+  - entity: sensor.apc_ups_battery_temperature
+    name: Battery Temperature
+    icon: mdi:thermometer
+  - entity: sensor.apc_ups_battery_status
+    name: Battery Health
+    icon: mdi:heart-pulse
+  - entity: sensor.apc_ups_last_transfer_reason
+    name: Last Transfer Reason
+    icon: mdi:history
+  - entity: sensor.apc_ups_last_self_test_result
+    name: Last Self-Test Result
+    icon: mdi:check-decagram
+  - entity: sensor.apc_ups_last_self_test_date
+    name: Last Self-Test Date
+    icon: mdi:calendar-check
